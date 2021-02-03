@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "f09b434a-9244-49ca-96ae-6e3f36099ff0",
+		"name": "ocean_backend_laboratorio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}",
+					"host": [
+						"{{API_URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ler todas as mensagens",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{API_URL}}/mensagens",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criar uma mensagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"texto\": \"Essa é uma nova mensagem.\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/mensagens",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar uma mensagem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"texto\": \"Essa é uma mensagem editada.\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/mensagens/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{API_URL}}/mensagens/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ler mensagem individualmente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover uma mensagem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/mensagens/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"mensagens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
