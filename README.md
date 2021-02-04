@@ -1,2 +1,2 @@
 # Ocean-Laboratorio-Backend
-API produzida com a orientação passado no curso de backend
+API produzida com a orientação passado no curso de Backend com NodeJs e Express
